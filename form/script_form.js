@@ -18,8 +18,8 @@ function cadastrar(){
     if(nome.value.trim() === '' || loja.value.trim() === '' || email.value.trim() === '' || tel.value.trim() === "" || jaCadastrado(nome.value, dadosNomes)){
         alert('Dados inválidos ou o Vendedor já foi cadastrado!')
     } else{
-        if(img){
-            img.remove()
+        if(img){ //fiz uma verifição da imagem para não repetir os dados, nem o título, caso o usuário queira cadastrar mais de uma pessoa.
+            img.remove() // Depois do primeiro cadastro, a verificação vai ser (false), então ela nao vai repetir o título.
             const resultado = document.createElement('h2')
             resultado.textContent = `Lista de Vendedores Cadastrados!`
             resultado.style.marginBottom = '30px'
