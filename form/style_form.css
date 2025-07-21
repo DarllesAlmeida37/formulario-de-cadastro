@@ -11,13 +11,14 @@ body{
 
 #titulo{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #0d62ff;
     font-size: 35px;
     text-align: center;
     margin: 40px 0;
 }
 #btn{
     color: white;
-    padding: 5px 12px;
+    padding: 5px 13px;
     margin-bottom: 50px;
     background-color: #0d62ff;
     border-radius: 6px;
