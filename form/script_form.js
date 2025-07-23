@@ -35,7 +35,7 @@ function cadastrar(){
         dadosNomes.push(nome.value) // Salvei o nome e loja separados, só para exibir para o usuário na tela!
         dadosLoja.push(loja.value)
         VendCadastrado.innerHTML += ''
-        VendCadastrado.style.border = '2px solid rgba(85, 144, 221, 0.75)'
+        VendCadastrado.style.border = '2px solid #5590ddbf'
         VendCadastrado.style.padding = '30px'
         VendCadastrado.style.borderRadius = '10px'
 
