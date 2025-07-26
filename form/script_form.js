@@ -14,7 +14,7 @@ function cadastrar(){
     function jaCadastrado(nome, lista){
         return lista.includes(nome.trim()) 
     }
-
+// PRECISO FAZER UMA CONFIRMAÇÃO COM O USUÁRIO, ANTES DE SALVAR O VENDEDOR NO SISTEMA.
     if(nome.value.trim() === '' || loja.value.trim() === '' || email.value.trim() === '' || tel.value.trim() === "" || jaCadastrado(nome.value, dadosNomes)){
         alert('Dados inválidos ou o Vendedor já foi cadastrado!')
     } else{
