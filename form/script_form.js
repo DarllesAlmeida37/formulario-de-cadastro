@@ -31,12 +31,12 @@ function cadastrar(){
                 VendCadastrado.appendChild(resultado)
             }
 
-            const novoContato = {
+            /*const novoContato = {
                 telefone: tel,
                 email: email
             }
             dadosContato.push(novoContato) // Salvei os dados de contato (telefone e email) para caso o beck-end precise comparar os dados!
-            console.log(dadosContato) // Exibi os dados no console só para ter certeza de que o código funcionou!
+            console.log(dadosContato) // Exibi os dados no console só para ter certeza de que o código funcionou!*/
 
             dadosNomes.push(nome.value) // Salvei o nome e loja separados, só para exibir para o usuário na tela!
             dadosLoja.push(loja.value)
@@ -46,7 +46,7 @@ function cadastrar(){
             VendCadastrado.style.borderRadius = '10px'
 
         
-            VendCadastrado.innerHTML += `<p><strong>VENDEDOR:</strong> ${dadosNomes} - <strong>Loja:</strong> ${dadosLoja}</p>`  
+            VendCadastrado.innerHTML += `<p><strong>VENDEDOR(A):</strong> ${nome.value} - <strong>Loja:</strong> ${loja.value}</p>`  
         }
 
     }
