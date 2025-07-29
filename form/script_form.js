@@ -31,13 +31,6 @@ function cadastrar(){
                 VendCadastrado.appendChild(resultado)
             }
 
-            /*const novoContato = {
-                telefone: tel,
-                email: email
-            }
-            dadosContato.push(novoContato) // Salvei os dados de contato (telefone e email) para caso o beck-end precise comparar os dados!
-            console.log(dadosContato) // Exibi os dados no console só para ter certeza de que o código funcionou!*/
-
             dadosNomes.push(nome.value) // Salvei o nome e loja separados, só para exibir para o usuário na tela!
             dadosLoja.push(loja.value)
             VendCadastrado.innerHTML += ''
@@ -57,8 +50,3 @@ function cadastrar(){
     email.value = ''
     nome.focus()
 }
-
-// Lembrar de fazer um array para cada input do cadastro.
-// ex: dadosNome, dadosTelefone, dadosEmail, dadosLoja.
-// Depois, mostrar todos os dados na tela para o usuário.
-// Obs: depois de criar todos os arrays, lembrar de apagar o array "dadosContato" com o objeto "novoContato" que está dentro dele.
