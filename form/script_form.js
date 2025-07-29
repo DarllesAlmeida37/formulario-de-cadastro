@@ -41,7 +41,7 @@ function cadastrar(){
             VendCadastrado.style.padding = '30px'
             VendCadastrado.style.borderRadius = '10px'
 
-        
+
             VendCadastrado.innerHTML += `<p><strong>VENDEDOR(A):</strong> ${nome.value}  -  
             <strong>LOJA:</strong> ${loja.value}  -  <strong>Telefone:</strong> ${tel.value}  -  
             <strong>E-mail:</strong> ${email.value}</p>`
