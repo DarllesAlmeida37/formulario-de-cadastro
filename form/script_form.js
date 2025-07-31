@@ -3,6 +3,7 @@ let dadosLoja = []
 let dadosTelefone = []
 let dadosEmail = []
 
+// A função "cadastrar" vai verificar os dados do usuário e salvar os dados em arrays.
 
 function cadastrar(){
     const nome = document.getElementById('nome')
@@ -12,13 +13,17 @@ function cadastrar(){
     const VendCadastrado = document.getElementById('cadastrado')
     const img = document.getElementById('imagem')
 
+// A função "jaCadastrodo" serva para verificar se o nome do vendedor já está na lista de cadastrados.
+
     function jaCadastrado(nome, lista){
-        return lista.includes(nome.trim()) 
+        return lista.includes(nome.trim())
     }
-// PRECISO FAZER UMA CONFIRMAÇÃO COM O USUÁRIO, ANTES DE SALVAR O VENDEDOR NO SISTEMA.
+// A condição "if" vai verificar se todos os campos dos inputs foram preenchidos, e também verifica se o nome do usuário já está cadastrado.
+
     if(nome.value.trim() === '' || loja.value.trim() === '' || email.value.trim() === '' || tel.value.trim() === "" || jaCadastrado(nome.value, dadosNomes)){
         alert('Dados inválidos ou o Vendedor já foi cadastrado!')
     } else{
+// Aqui o sistema vai mostar na tela os dados que o usuário inseriu e vai pedir uma confirmação, antes de salvar os dados.
 
         const confirmacao = confirm(`Deseja cadastrar o(a) vendedor(a): ${nome.value}\nLoja: ${loja.value}\nTelefone: ${tel.value}\nE-mail: ${email.value}`)
 
@@ -32,10 +37,10 @@ function cadastrar(){
                 VendCadastrado.appendChild(resultado)
             }
 
-            dadosNomes.push(nome) // Salvei todos os dados em arrays, para exibir para o usuário na tela!
-            dadosLoja.push(loja)
-            dadosTelefone.push(tel)
-            dadosEmail.push(email)
+            dadosNomes.push(nome.value.trim()) // Salvei todos os dados dos inputs em arrays, para exibir na telo para o usuário!
+            dadosLoja.push(loja.value.trim())
+            dadosTelefone.push(tel.value.trim())
+            dadosEmail.push(email.value.trim())
             VendCadastrado.innerHTML += ''
             VendCadastrado.style.border = '2px solid #5590ddbf'
             VendCadastrado.style.padding = '30px'
